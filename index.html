@@ -12,31 +12,31 @@
 </head>
 <body>
   <div class="card shadow m-3">
-    <h5 class="card-header">A URL Shortener created using free Cloudflare worker and KV</h5>
+    <h5 class="card-header">缩短连接</h5>
     <div class="card-body">
       <h5 class="card-title"> </h5>
 
       <div class="input-group mb-3">
 
-          <span class="input-group-text" id="basic-addon1">Long URL</span>
+          <span class="input-group-text" id="basic-addon1">原网址</span>
 
         <input type="text" class="form-control" id="longURL" aria-describedby="basic-addon1" placeholder="Example: https://example.com/" oninput="loadUrlList()">
       </div>
 
       <div class="input-group mb-3">
 
-          <span class="input-group-text" id="basic-addon2">Custom Short URL</span>
+          <span class="input-group-text" id="basic-addon2">自定义短链接</span>
 
         <input type="text" class="form-control" id="keyPhrase" aria-describedby="basic-addon2" placeholder="As you wish">
       </div>
 
       <div class="input-group mb-3">
-        <button class="btn btn-primary" type="button" onclick='shorturl()' id="addBtn">Shorten it</button>
+        <button class="btn btn-primary" type="button" onclick='shorturl()' id="addBtn">生成</button>
       </div>
 
       <div class="input-group mb-3">
 
-          <span class="input-group-text" id="basic-addon3">password</span>
+          <span class="input-group-text" id="basic-addon3">密钥</span>
 
         <input class="form-control" type="text" value="__PASSWORD__" readonly="true" id="passwordText" aria-describedby="basic-addon3">
       </div>
